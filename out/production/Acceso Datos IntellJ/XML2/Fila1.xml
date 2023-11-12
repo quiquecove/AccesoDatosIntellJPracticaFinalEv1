@@ -1,0 +1,56 @@
+<ListaAlumnos>
+  <Alumno>
+    <nombre>Enrique</nombre>
+    <edad>19</edad>
+    <noGrupo>1</noGrupo>
+    <alturaAproxEnMetros>1.8</alturaAproxEnMetros>
+    <juegaEnConsola>false</juegaEnConsola>
+    <horasEnElLOL>0</horasEnElLOL>
+    <juegoFavorito>animalX</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Fernando</nombre>
+    <edad>27</edad>
+    <noGrupo>1</noGrupo>
+    <alturaAproxEnMetros>1.63</alturaAproxEnMetros>
+    <juegaEnConsola>false</juegaEnConsola>
+    <horasEnElLOL>9000</horasEnElLOL>
+    <juegoFavorito>God Of War</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Dudu</nombre>
+    <edad>23</edad>
+    <noGrupo>2</noGrupo>
+    <alturaAproxEnMetros>1.75</alturaAproxEnMetros>
+    <juegaEnConsola>false</juegaEnConsola>
+    <horasEnElLOL>700</horasEnElLOL>
+    <juegoFavorito>Skyrim</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Dani</nombre>
+    <edad>20</edad>
+    <noGrupo>2</noGrupo>
+    <alturaAproxEnMetros>1.97</alturaAproxEnMetros>
+    <juegaEnConsola>true</juegaEnConsola>
+    <horasEnElLOL>2500</horasEnElLOL>
+    <juegoFavorito>FIFA</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Dichao</nombre>
+    <edad>23</edad>
+    <noGrupo>3</noGrupo>
+    <alturaAproxEnMetros>1.82</alturaAproxEnMetros>
+    <juegaEnConsola>true</juegaEnConsola>
+    <horasEnElLOL>48</horasEnElLOL>
+    <juegoFavorito>Overcooked</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Angel</nombre>
+    <edad>23</edad>
+    <noGrupo>3</noGrupo>
+    <alturaAproxEnMetros>1.93</alturaAproxEnMetros>
+    <juegaEnConsola>true</juegaEnConsola>
+    <horasEnElLOL>2355</horasEnElLOL>
+    <juegoFavorito>Final Fantasy 4</juegoFavorito>
+  </Alumno>
+</ListaAlumnos>
