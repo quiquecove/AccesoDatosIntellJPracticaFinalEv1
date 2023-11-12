@@ -1,0 +1,47 @@
+<ListaAlumnos>
+  <Alumno>
+    <nombre>Sergio.P</nombre>
+    <edad>35</edad>
+    <noGrupo>7</noGrupo>
+    <alturaAproxEnMetros>1.7</alturaAproxEnMetros>
+    <juegaEnConsola>true</juegaEnConsola>
+    <horasEnElLOL>0</horasEnElLOL>
+    <juegoFavorito>Last of us</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Miguel</nombre>
+    <edad>27</edad>
+    <noGrupo>7</noGrupo>
+    <alturaAproxEnMetros>1.73</alturaAproxEnMetros>
+    <juegaEnConsola>true</juegaEnConsola>
+    <horasEnElLOL>10</horasEnElLOL>
+    <juegoFavorito>Fifa</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Sergio.R</nombre>
+    <edad>23</edad>
+    <noGrupo>9</noGrupo>
+    <alturaAproxEnMetros>1.93</alturaAproxEnMetros>
+    <juegaEnConsola>true</juegaEnConsola>
+    <horasEnElLOL>1100</horasEnElLOL>
+    <juegoFavorito>CS GO</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Dante</nombre>
+    <edad>36</edad>
+    <noGrupo>8</noGrupo>
+    <alturaAproxEnMetros>1.87</alturaAproxEnMetros>
+    <juegaEnConsola>true</juegaEnConsola>
+    <horasEnElLOL>0</horasEnElLOL>
+    <juegoFavorito>Last of us</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Pablo</nombre>
+    <edad>28</edad>
+    <noGrupo>9</noGrupo>
+    <alturaAproxEnMetros>1.86</alturaAproxEnMetros>
+    <juegaEnConsola>true</juegaEnConsola>
+    <horasEnElLOL>3000</horasEnElLOL>
+    <juegoFavorito>Total war</juegoFavorito>
+  </Alumno>
+</ListaAlumnos>
