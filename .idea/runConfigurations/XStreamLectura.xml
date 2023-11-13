@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="XStreamLectura" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="ActividadFinalEv1.XStreamLectura" />
+    <module name="Acceso Datos IntellJ" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="ActividadFinalEv1.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
