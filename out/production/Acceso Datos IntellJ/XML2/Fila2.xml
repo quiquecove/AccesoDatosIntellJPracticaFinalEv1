@@ -1,0 +1,56 @@
+<ListaAlumnos>
+  <Alumno>
+    <nombre>David</nombre>
+    <edad>19</edad>
+    <noGrupo>4</noGrupo>
+    <alturaAproxEnMetros>1.71</alturaAproxEnMetros>
+    <juegaEnConsola>false</juegaEnConsola>
+    <horasEnElLOL>0</horasEnElLOL>
+    <juegoFavorito>Rainbow Six Siege</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Juan</nombre>
+    <edad>18</edad>
+    <noGrupo>4</noGrupo>
+    <alturaAproxEnMetros>1.69</alturaAproxEnMetros>
+    <juegaEnConsola>false</juegaEnConsola>
+    <horasEnElLOL>200</horasEnElLOL>
+    <juegoFavorito>Rocket League</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Ismael</nombre>
+    <edad>20</edad>
+    <noGrupo>5</noGrupo>
+    <alturaAproxEnMetros>1.82</alturaAproxEnMetros>
+    <juegaEnConsola>false</juegaEnConsola>
+    <horasEnElLOL>700</horasEnElLOL>
+    <juegoFavorito>CSGO</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Óscar</nombre>
+    <edad>27</edad>
+    <noGrupo>5</noGrupo>
+    <alturaAproxEnMetros>2.0</alturaAproxEnMetros>
+    <juegaEnConsola>false</juegaEnConsola>
+    <horasEnElLOL>0</horasEnElLOL>
+    <juegoFavorito>CSGO</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Álvaro</nombre>
+    <edad>21</edad>
+    <noGrupo>6</noGrupo>
+    <alturaAproxEnMetros>1.84</alturaAproxEnMetros>
+    <juegaEnConsola>false</juegaEnConsola>
+    <horasEnElLOL>60</horasEnElLOL>
+    <juegoFavorito>COD</juegoFavorito>
+  </Alumno>
+  <Alumno>
+    <nombre>Hugo</nombre>
+    <edad>20</edad>
+    <noGrupo>6</noGrupo>
+    <alturaAproxEnMetros>1.8</alturaAproxEnMetros>
+    <juegaEnConsola>true</juegaEnConsola>
+    <horasEnElLOL>0</horasEnElLOL>
+    <juegoFavorito>FIFA</juegoFavorito>
+  </Alumno>
+</ListaAlumnos>
