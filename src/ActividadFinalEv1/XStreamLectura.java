@@ -6,7 +6,9 @@ import com.thoughtworks.xstream.security.NoTypePermission;
 import com.thoughtworks.xstream.security.NullPermission;
 import com.thoughtworks.xstream.security.PrimitiveTypePermission;
 
+import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.ObjectOutputStream;
 import java.util.List;
 
 public class XStreamLectura {
@@ -32,7 +34,9 @@ public class XStreamLectura {
             FileReader fileReader = new FileReader("Paises.xml");
             ListaPaises listaPaises = (ListaPaises) xstream.fromXML(fileReader);
             List<PaisSerializable> paises = listaPaises.getPaises();
-
+            //utilizo un fos y un oos para escribir objetos de tipo ListaPaises en el fichero Paises.dat
+            FileOutputStream fos=new FileOutputStream("Paises.dat");
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fos);
             // Imprimir la información de los países
             for (PaisSerializable pais : paises) {
                 System.out.println("Region del país: " + pais.getRegion());
@@ -41,8 +45,10 @@ public class XStreamLectura {
                 System.out.println("PIB: " + pais.getPib());
                 System.out.println("Gini: " + pais.getGini());
                 System.out.println("-----------------------");
+                //introduzco el pais de la iteracion.
+                objectOutputStream.writeObject(pais);
             }
-
+            objectOutputStream.close();
             fileReader.close();
         } catch (Exception e) {
             e.printStackTrace();
