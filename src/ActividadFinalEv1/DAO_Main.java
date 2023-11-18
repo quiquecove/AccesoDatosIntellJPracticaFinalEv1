@@ -12,9 +12,12 @@ import java.io.ObjectOutputStream;
 import java.sql.SQLException;
 import java.util.List;
 
-public class XStreamLectura{
-    public static void main(String[] args) {
-        ListaPaises list=new ListaPaises();
+public class DAO_Main extends DAO1 {
+    public static void main(String[] args) throws SQLException {
+        DAO1.init();
+        DAO_Operaciones dp = new DAO_Operaciones();
+        dp.createTable();
+        List<PaisSerializable> paises = null;
         try {
             // Configuración de XStream
             XStream xstream = new XStream(new DomDriver());
@@ -40,10 +43,10 @@ public class XStreamLectura{
             // Crear una lista directamente a partir del archivo XML
             FileReader fileReader = new FileReader("Paises.xml");
             ListaPaises listaPaises = (ListaPaises) xstream.fromXML(fileReader);
-            List<PaisSerializable> paises = listaPaises.getPaises();
+            paises = listaPaises.getPaises();
             //utilizo un fos y un oos para escribir objetos de tipo ListaPaises en el fichero Paises.dat
-            FileOutputStream fos = new FileOutputStream("Paises.dat");
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fos);
+//            FileOutputStream fos = new FileOutputStream("Paises.dat");
+//            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fos);
             // Imprimir la información de los países
             for (PaisSerializable pais : paises) {
                 System.out.println("Region del país: " + pais.getRegion());
@@ -53,13 +56,34 @@ public class XStreamLectura{
                 System.out.println("Gini: " + pais.getGini());
                 System.out.println("-----------------------");
                 //introduzco el pais de la iteracion.
-                objectOutputStream.writeObject(pais);
-                list.addPais(pais);
+//                objectOutputStream.writeObject(pais);
+                //
+                dp.crearRegistro(pais);
+
             }
-            objectOutputStream.close();
+//            objectOutputStream.close();
             fileReader.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //consultar la tabla PAISES
+        dp.consultarTabla();
+        dp.modifPIB();
+        System.out.println("---------------------");
+        dp.consultarTabla();
+        System.out.println("+++++++++++++++++++++++++++++++");
+        System.out.println("Antes:");
+        dp.consultarPais("El Salvador");
+        dp.consultarPais("Honduras");
+        dp.consultarPais("México");
+        /////////////////////////////////////
+        dp.modiGINIshm("El Salvador");
+        dp.modiGINIshm("Honduras");
+        dp.modiGINIshm("México");
+        ////////////////////////////////////////
+        dp.consultarPais("El Salvador");
+        dp.consultarPais("Honduras");
+        dp.consultarPais("México");
     }
+
 }
