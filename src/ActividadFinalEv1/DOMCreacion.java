@@ -29,18 +29,9 @@ public class DOMCreacion {
             int[] pibValues = {149259, 1987, 74818,185473,85625,47770,2890685,128500,129950};
             double[] giniValues = {0, 53.3, 38.8,48.3,48.2,46.2,45.4,50.9,47.2};
             String[] region={"Sur America","Centro América","Centro América","Centro América","Centro América","Centro América","Centro América","Centro América","Centro América"};
-
-            // Crear una instancia de ListaPaises
-            ListaPaises listaPaises = new ListaPaises();
-
+            
             // Añadir países al documento usando un bucle
             for (int i = 0; i < nombres.length; i++) {
-                // Crear un objeto PaisSerializable
-                PaisSerializable pais = new PaisSerializable(region[i], nombres[i], presidentes[i], String.valueOf(pibValues[i]), String.valueOf(giniValues[i]));
-
-                // Agregar el país a la lista
-                listaPaises.addPais(pais);
-
                 // Crear elementos XML y agregarlos al documento
                 Element paisElement = doc.createElement("pais");
                 paisElement.setAttribute("region", region[i]);

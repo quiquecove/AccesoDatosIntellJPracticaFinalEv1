@@ -24,6 +24,11 @@ public class XStreamLectura {
 
             // Remueve la restricción para java.util.List
             xstream.allowTypes(new Class[]{ListaPaises.class, PaisSerializable.class, java.util.ArrayList.class, java.util.HashMap.class, java.util.LinkedHashMap.class});
+//metodo manu
+//            xstream.allowTypesByWildcard(new String[] {
+//                    "ListaPaises.class",
+//                    "PaisSerializable.class"
+//            });
 
             // Alias para mapear los nombres de las clases y elementos XML
             xstream.alias("lista_paises", ListaPaises.class);
@@ -35,7 +40,7 @@ public class XStreamLectura {
             ListaPaises listaPaises = (ListaPaises) xstream.fromXML(fileReader);
             List<PaisSerializable> paises = listaPaises.getPaises();
             //utilizo un fos y un oos para escribir objetos de tipo ListaPaises en el fichero Paises.dat
-            FileOutputStream fos=new FileOutputStream("Paises.dat");
+            FileOutputStream fos = new FileOutputStream("Paises.dat");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fos);
             // Imprimir la información de los países
             for (PaisSerializable pais : paises) {
