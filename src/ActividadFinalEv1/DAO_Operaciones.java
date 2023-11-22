@@ -1,6 +1,5 @@
 package ActividadFinalEv1;
 
-import DAO.AlumnoCFGS;
 
 import java.sql.SQLException;
 

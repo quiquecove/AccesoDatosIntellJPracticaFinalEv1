@@ -49,7 +49,8 @@ public class DAO_Main extends DAO1 {
 //            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fos);
             // Imprimir la información de los países
             for (PaisSerializable pais : paises) {
-                System.out.println("Region del país: " + pais.getRegion());
+
+                //System.out.println("Region del país: " + pais.getRegion());
                 System.out.println("Nombre del país: " + pais.getNombre_pais());
                 System.out.println("Presidente: " + pais.getPresidente());
                 System.out.println("PIB: " + pais.getPib());
