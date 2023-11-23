@@ -22,6 +22,7 @@ public class DAO_Main extends DAO1 {
             // Configuración de XStream
             XStream xstream = new XStream(new DomDriver());
 
+            
             // Permisos y configuración de tipos permitidos
             xstream.addPermission(NoTypePermission.NONE);
             xstream.addPermission(NullPermission.NULL);
