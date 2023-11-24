@@ -26,7 +26,7 @@ public class XStreamLectura{
 
             // Remueve la restricción para java.util.List
             xstream.allowTypes(new Class[]{ListaPaises.class, PaisSerializable.class, java.util.ArrayList.class, java.util.HashMap.class, java.util.LinkedHashMap.class});
-//metodo manu
+//         metodo manu
 //            xstream.allowTypesByWildcard(new String[] {
 //                    "ListaPaises.class",
 //                    "PaisSerializable.class"
@@ -46,7 +46,7 @@ public class XStreamLectura{
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fos);
             // Imprimir la información de los países
             for (PaisSerializable pais : paises) {
-                System.out.println("Region del país: " + pais.getRegion());
+                //System.out.println("Region del país: " + pais.getRegion());
                 System.out.println("Nombre del país: " + pais.getNombre_pais());
                 System.out.println("Presidente: " + pais.getPresidente());
                 System.out.println("PIB: " + pais.getPib());
@@ -54,6 +54,7 @@ public class XStreamLectura{
                 System.out.println("-----------------------");
                 //introduzco el pais de la iteracion.
                 objectOutputStream.writeObject(pais);
+                //añado el pais a la lista
                 list.addPais(pais);
             }
             objectOutputStream.close();

@@ -70,8 +70,10 @@ public class DAO_Main extends DAO1 {
         }
         //consultar la tabla PAISES
         dp.consultarTabla();
+        //modifico el PIB
         dp.modifPIB();
         System.out.println("---------------------");
+        //volvemos a consultar la tabla para ver los cambios reflejados
         dp.consultarTabla();
         System.out.println("+++++++++++++++++++++++++++++++");
         System.out.println("Antes:");
@@ -79,10 +81,12 @@ public class DAO_Main extends DAO1 {
         dp.consultarPais("Honduras");
         dp.consultarPais("México");
         /////////////////////////////////////
+        //modificamos el gini de los 3 paises
         dp.modiGINIshm("El Salvador");
         dp.modiGINIshm("Honduras");
         dp.modiGINIshm("México");
         ////////////////////////////////////////
+        System.out.println("Despues:");
         dp.consultarPais("El Salvador");
         dp.consultarPais("Honduras");
         dp.consultarPais("México");
